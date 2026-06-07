@@ -1,8 +1,10 @@
 ![Profile banner](assets/profile-top.png)
 
-# Hi, I'm Ananda Krishnan
+<h1 align="center"><font face="RNS Camelia">Ananda Krishnan P S</font></h1>
 
-I build things, learn in public, and keep small notes about the work I want to remember.
+<p align="center">---</p>
+
+<h3 align="center"><font face="Foglihten F02">Technical Lead &amp; Founding Engineer in</font> <strong>@AIRA</strong></h3>
 
 ## About Me
 
