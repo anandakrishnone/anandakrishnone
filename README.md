@@ -2,8 +2,6 @@
 
 <h1 align="center"><font face="RNS Camelia">Ananda Krishnan P S</font></h1>
 
-<p align="center">---</p>
-
 <h3 align="center"><font face="Foglihten F02">Technical Lead &amp; Founding Engineer in</font> <strong>@AIRA</strong></h3>
 
 ## About Me
