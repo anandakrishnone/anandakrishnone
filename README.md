@@ -1,8 +1,8 @@
 ![Profile banner](assets/profile-top.png)
 
-<h1 align="center"><font face="RNS Camelia">Ananda Krishnan P S</font></h1>
-
-<h3 align="center"><font face="Foglihten F02">Technical Lead &amp; Founding Engineer in</font> <strong>@AIRA</strong></h3>
+<p align="center">
+  <img src="assets/profile-headline.svg" alt="Ananda Krishnan P S - Technical Lead and Founding Engineer in @AIRA">
+</p>
 
 ## About Me
 
