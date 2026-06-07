@@ -17,20 +17,20 @@
       }
       .name {
         font-family: 'Bangers Embedded', Impact, sans-serif;
-        font-size: 82px;
+        font-size: 88px;
         font-weight: 400;
-        letter-spacing: 2px;
+        letter-spacing: 5px;
         fill: #202124;
       }
       .role {
         font-family: 'Fjalla One Embedded', 'Arial Narrow', Arial, sans-serif;
-        font-size: 27px;
-        letter-spacing: 1px;
+        font-size: 22px;
+        letter-spacing: 0.8px;
         fill: #303134;
       }
     ]]></style>
   </defs>
   <rect width="1600" height="210" fill="transparent"/>
-  <text class="name" x="800" y="88" text-anchor="middle">Ananda Krishnan P S</text>
-  <text class="role" x="800" y="146" text-anchor="middle">Technical Lead &amp; Founding Engineer in @AiRA</text>
+  <text class="name" x="800" y="92" text-anchor="middle">Ananda Krishnan P S</text>
+  <text class="role" x="800" y="150" text-anchor="middle">Technical Lead &amp; Founding Engineer in @AiRA</text>
 </svg>
