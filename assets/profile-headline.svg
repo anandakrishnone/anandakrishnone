@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="210" viewBox="0 0 1600 210" role="img" aria-labelledby="title desc">
   <title id="title">Ananda Krishnan P S</title>
-  <desc id="desc">Technical Lead and Founding Engineer in AiRA</desc>
+  <desc id="desc">Technical Lead and Founding Engineer AiRA</desc>
   <defs>
     <style><![CDATA[
       @font-face {
@@ -32,5 +32,5 @@
   </defs>
   <rect width="1600" height="210" fill="transparent"/>
   <text class="name" x="800" y="92" text-anchor="middle">Ananda Krishnan P S</text>
-  <text class="role" x="800" y="150" text-anchor="middle">Technical Lead &amp; Founding Engineer in @AiRA</text>
+  <text class="role" x="800" y="150" text-anchor="middle">Technical Lead &amp; Founding Engineer @AiRA</text>
 </svg>
