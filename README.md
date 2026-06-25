@@ -6,6 +6,6 @@
 
 You want to know what *technology* I know?
 
-Leave it — I'll start with what **social skill** I know. I know **`MANNERS`** *(all uppercase)*.
+Leave it, I'll start with what **social skill** I know. I know **`MANNERS`** *(all uppercase)*.
 
 So I ***WELCOME*** you to this little space of mine.
