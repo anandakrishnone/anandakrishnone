@@ -4,8 +4,7 @@
   <img src="assets/profile-headline.svg" alt="Ananda Krishnan P S - Technical Lead and Founding Engineer @AiRA">
 </p>
 
-You want to know what *technology* I know?
-
+You want to know what *technology* I know?<br>
 I'll start with what **social skill** I have. I know **`MANNERS`**.
 
 So I ***WELCOME*** you to this little space of mine.
