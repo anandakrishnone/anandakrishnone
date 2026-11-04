@@ -5,8 +5,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/anandakrishnone/anandakrishnone/raw/output/streak-dark.svg">
-    <img src="https://github.com/anandakrishnone/anandakrishnone/raw/output/streak-light.svg" alt="GitHub contribution stats">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/anandakrishnone/anandakrishnone/output/streak-dark.svg">
+    <img src="https://raw.githubusercontent.com/anandakrishnone/anandakrishnone/output/streak-light.svg" alt="GitHub contribution stats" width="440" height="235">
   </picture>
   <br>
   Most of my contributions are private, but you can contact me through
