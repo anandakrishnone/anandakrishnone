@@ -20,9 +20,11 @@ All of it is in private repos. But you can ask me about any of it.
 <div align="center"><hr width="400"></div>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/anandakrishnone"><img src="assets/icons/linkedin.svg" alt="LinkedIn" height="28"></a>
+  <a href="https://www.linkedin.com/in/anandakrishnone"><img src="assets/logos/linkedin-icon.svg" alt="LinkedIn" height="28"></a>
   &nbsp;&nbsp;&nbsp;
-  <a href="mailto:anandakrishnone@gmail.com"><img src="assets/icons/gmail.svg" alt="Gmail" height="28"></a>
+  <a href="mailto:anandakrishnone@gmail.com"><img src="assets/logos/google-gmail.svg" alt="Gmail" height="28"></a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://x.com/anandakrishnone"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github.com/anandakrishnone/anandakrishnone/raw/master/assets/icons/x-dark.svg"><img src="assets/icons/x.svg" alt="X" height="28"></picture></a>
+  <a href="https://x.com/anandakrishnone"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github.com/anandakrishnone/anandakrishnone/raw/master/assets/logos/x-dark.svg"><img src="assets/logos/x.svg" alt="X" height="28"></picture></a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://t.me/anandakrishnone"><img src="assets/logos/telegram.svg" alt="Telegram" height="28"></a>
 </p>
