@@ -1,6 +1,6 @@
 I'm obsessive about the code I write and I know that. The kind who'll leave a PR comment asking to rename a request-body alias from "sp" to "spk", not because anyone asked, but because "spk" feels right cause I want my codebase to be PERFECT.
 
-What I built and run at AiRA:
+What I built and run at AiRA (5,879 commits since May 2025):
 
 - The backend, from the first commit, in FastAPI on MongoDB, Redis and Qdrant
 - Our whole Azure infrastructure on private networking, which I am managing alone
