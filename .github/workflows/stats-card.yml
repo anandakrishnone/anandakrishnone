@@ -1,4 +1,4 @@
-name: Profile card
+name: Stats card
 
 on:
   schedule:
@@ -7,14 +7,14 @@ on:
   push:
     branches: [master]
     paths:
-      - .github/workflows/profile-card.yml
-      - .github/scripts/profile_card.py
+      - .github/workflows/stats-card.yml
+      - .github/scripts/stats_card.py
 
 permissions:
   contents: write
 
 concurrency:
-  group: profile-card
+  group: stats-card
   cancel-in-progress: true
 
 jobs:
@@ -24,10 +24,10 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - name: Build the card
-        run: python3 .github/scripts/profile_card.py "$RUNNER_TEMP/cards"
+      - name: Build the cards
+        run: python3 .github/scripts/stats_card.py "$RUNNER_TEMP/cards"
 
-      - name: Publish it to the output branch
+      - name: Publish them to the output branch
         run: |
           git fetch --quiet --depth=1 origin +refs/heads/output:refs/remotes/origin/output || true
           git switch --quiet --orphan output
@@ -35,10 +35,10 @@ jobs:
           git add --all
           if git rev-parse --quiet --verify refs/remotes/origin/output >/dev/null &&
              git diff --cached --quiet refs/remotes/origin/output; then
-            echo "Card unchanged, nothing to publish"
+            echo "Cards unchanged, nothing to publish"
             exit 0
           fi
           git -c user.name="github-actions[bot]" \
               -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
-              commit --quiet --message "Update profile card"
+              commit --quiet --message "Update stats card"
           git push --quiet --force origin output
