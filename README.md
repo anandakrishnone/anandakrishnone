@@ -12,8 +12,6 @@
   Most of my contributions are private, but you can contact me through
 </p>
 
-<div align="center"><hr width="120"></div>
-
 <p align="center">
   <a href="mailto:anandakrishnone@gmail.com"><img src="assets/logos/google-gmail.svg" alt="Gmail" height="28"></a>
   &nbsp;&nbsp;&nbsp;
