@@ -17,7 +17,7 @@ All of it is in private repos. But you can ask me about any of it.
   </picture>
 </p>
 
-<div align="center"><hr width="400"></div>
+<div align="center"><hr width="120"></div>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/anandakrishnone"><img src="assets/logos/linkedin-icon.svg" alt="LinkedIn" height="28"></a>
