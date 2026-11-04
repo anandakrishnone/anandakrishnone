@@ -2,8 +2,10 @@
 
 The card comes from github-readme-streak-stats (streak-stats.demolab.com).
 GitHub strips CSS from READMEs, so the shadow has to be part of the image.
-This puts each card on a slightly bigger canvas with a soft shadow under it
-and writes streak-light.svg and streak-dark.svg to the folder passed in.
+The short line under the card is drawn here too, because an <hr> in the
+README comes with a 24px margin that can't be changed.
+
+Writes streak-light.svg and streak-dark.svg to the folder passed in.
 """
 
 import re
@@ -39,6 +41,7 @@ THEMES = {
         },
         # shadow colour, opacity of the tight shadow, opacity of the soft one
         "shadow": ("#1F2328", 0.12, 0.24),
+        "line": "#D1D9E0",
     },
     "dark": {
         "colors": {
@@ -55,12 +58,15 @@ THEMES = {
             "dates": "9198A1",
         },
         "shadow": ("#010409", 0.8, 0.9),
+        "line": "#3D444D",
     },
 }
 # The soft shadow: how much it blurs and how far it drops below the card.
 BLUR, DROP = 10, 6
 # Room around the card so the shadow fades out before the edge of the image.
-PAD_SIDE, PAD_TOP, PAD_BOTTOM = 2 * BLUR, 2 * BLUR - DROP, 2 * BLUR + DROP
+PAD_SIDE, PAD_TOP = 2 * BLUR, 2 * BLUR - DROP
+# The line under the card sits just past where the shadow fades out.
+LINE_GAP, LINE_WIDTH = 2 * BLUR + DROP + 2, 120
 
 UNSAFE = re.compile(r"<script|<foreignObject|<image|\son[a-z]+\s*=|javascript:", re.I)
 
@@ -79,7 +85,7 @@ def fetch(params):
     sys.exit("Could not fetch the card. The last published one stays up.")
 
 
-def add_shadow(card, background, shadow):
+def build(card, theme):
     if "Total Contributions" not in card or "Week Streak" not in card:
         sys.exit("The card came back without the stats. The last published one stays up.")
     if UNSAFE.search(card):
@@ -90,9 +96,12 @@ def add_shadow(card, background, shadow):
     width, height = (float(n) for n in view_box.split()[2:])
     body = card[root.end():card.rindex("</svg>")]
 
-    color, near, far = shadow
+    background = theme["colors"]["background"]
+    color, near, far = theme["shadow"]
+    line = theme["line"]
     full_width = width + 2 * PAD_SIDE
-    full_height = height + PAD_TOP + PAD_BOTTOM
+    line_y = PAD_TOP + height + LINE_GAP
+    full_height = line_y + 1
     # The filter works on a bigger area than the image, or the dropped shadow
     # gets cut off in a hard line near the top edge.
     margin = 3 * BLUR
@@ -116,6 +125,7 @@ def add_shadow(card, background, shadow):
   </defs>
   <rect x="{PAD_SIDE}" y="{PAD_TOP}" width="{width:g}" height="{height:g}" rx="{RADIUS}" fill="#{background}" filter="url(#card-shadow)"/>
   <svg x="{PAD_SIDE}" y="{PAD_TOP}" width="{width:g}" height="{height:g}" viewBox="{view_box}">{body}</svg>
+  <rect x="{(full_width - LINE_WIDTH) / 2:g}" y="{line_y:g}" width="{LINE_WIDTH}" height="1" fill="{line}"/>
 </svg>
 """
 
@@ -127,8 +137,7 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     for name, theme in THEMES.items():
         card = fetch({**CARD, **theme["colors"]})
-        svg = add_shadow(card, theme["colors"]["background"], theme["shadow"])
-        (out / f"streak-{name}.svg").write_text(svg, encoding="utf-8")
+        (out / f"streak-{name}.svg").write_text(build(card, theme), encoding="utf-8")
         print(f"Wrote streak-{name}.svg")
 
 
