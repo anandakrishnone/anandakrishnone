@@ -1,6 +1,6 @@
 <p align="center">
-  <em>I’m obsessive about the code I write and I know that.<br>
-  The kind who’ll leave a PR comment asking to rename a request-body alias from 'sp' to 'spk', not because anyone asked, but because 'spk' feels right cause I want my codebase to be PERFECT.</em>
+  <em>I'M OBSESSIVE ABOUT THE CODE I WRITE AND I AM AWARE OF THAT.</em><br>
+  The kind who’ll leave a PR comment asking to rename a request-body alias from 'sp' to 'spk', not because anyone asked, but because 'spk' feels right cause I want my codebase to be PERFECT.
 </p>
 
 <p align="center">
